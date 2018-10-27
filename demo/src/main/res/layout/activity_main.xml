@@ -30,8 +30,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="204dp"
-        android:onClick="changePrevColor"
-        android:text="Alterar a cor"
+        android:onClick="changeColor"
+        android:text="Alterar cores das barras"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -45,8 +45,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
-        android:onClick="changeCurrColor"
-        android:text="Alterar a cor"
+        android:onClick="increase"
+        android:text="Incrementar valor atual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"/>

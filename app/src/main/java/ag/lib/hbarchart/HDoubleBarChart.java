@@ -19,6 +19,8 @@ import android.widget.LinearLayout;
 
 public class HDoubleBarChart extends LinearLayout {
     private static final String NS = "http://schemas.android.com/apk/res/android";
+    private String originalColorBar0 = "#f7ac6a";
+    private String originalColorBar1 = "#e67e22";
     private String colorBar0 = "#f7ac6a";
     private String colorBar1 = "#e67e22";
     private int defaultBarHeight = 24;
@@ -213,6 +215,14 @@ public class HDoubleBarChart extends LinearLayout {
     public void setCurrentBarColor(String color){
         colorBar1 = color;
         setColors();
+    }
+
+    public void resetPreviousBarColor(){
+        setPreviousBarColor(originalColorBar0);
+    }
+
+    public void resetCurrentBarColor(){
+        setCurrentBarColor(originalColorBar1);
     }
 
 }
